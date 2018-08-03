@@ -18,10 +18,6 @@ jobs:
 
     steps:
       - checkout
-      - run:
-          name: export environment variables
-          command: |
-            export COINAPI_KEY="API_KEY"
 
       # Download and cache dependencies
       - restore_cache:
