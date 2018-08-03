@@ -1,0 +1,705 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://rest.coinapi.io/v1/exchanges
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.2
+      X-Coinapi-Key:
+      - API_KEY
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 10 Jul 2018 19:17:19 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d4f1221d04c74e92e97d345022950b6a71531250239; expires=Wed, 10-Jul-19
+        19:17:19 GMT; path=/; domain=.coinapi.io; HttpOnly; Secure
+      Vary:
+      - Accept-Encoding
+      Request-Context:
+      - appId=cid-v1:9006a036-a027-444b-9b12-21861d70ec00
+      Strict-Transport-Security:
+      - max-age=0
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 43855eaccc82bba2-LHR
+    body:
+      encoding: UTF-8
+      string: "[\r\n  {\r\n    \"exchange_id\": \"BINANCE\",\r\n    \"website\": \"https://www.binance.com/\",\r\n
+        \   \"name\": \"Binance\",\r\n    \"data_start\": \"2017-09-06\",\r\n    \"data_end\":
+        \"2018-06-28\",\r\n    \"data_quote_start\": \"2017-12-18T21:50:58.3910192Z\",\r\n
+        \   \"data_quote_end\": \"2018-06-28T10:05:12.3820000Z\",\r\n    \"data_orderbook_start\":
+        \"2017-12-18T21:50:58.3910192Z\",\r\n    \"data_orderbook_end\": \"2018-06-28T10:05:12.3820000Z\",\r\n
+        \   \"data_trade_start\": \"2017-09-06T10:29:03.1290000Z\",\r\n    \"data_trade_end\":
+        \"2018-06-27T12:59:59.9470000Z\",\r\n    \"data_trade_count\": 460919764,\r\n
+        \   \"data_symbols_count\": 380\r\n  },\r\n  {\r\n    \"exchange_id\": \"COINBASE\",\r\n
+        \   \"website\": \"https://www.gdax.com/\",\r\n    \"name\": \"GDAX\",\r\n
+        \   \"data_start\": \"2015-01-14\",\r\n    \"data_end\": \"2018-06-28\",\r\n
+        \   \"data_quote_start\": \"2015-05-17T00:51:32.6370000Z\",\r\n    \"data_quote_end\":
+        \"2018-06-28T10:04:32.9363156Z\",\r\n    \"data_orderbook_start\": \"2015-05-17T00:51:32.6370000Z\",\r\n
+        \   \"data_orderbook_end\": \"2018-06-28T10:04:32.9363156Z\",\r\n    \"data_trade_start\":
+        \"2015-01-14T16:07:05.0000000Z\",\r\n    \"data_trade_end\": \"2018-06-27T14:10:02.5290000Z\",\r\n
+        \   \"data_trade_count\": 135908411,\r\n    \"data_symbols_count\": 13\r\n
+        \ },\r\n  {\r\n    \"exchange_id\": \"BITSTAMP\",\r\n    \"website\": \"https://www.bitstamp.net/\",\r\n
+        \   \"name\": \"Bitstamp Ltd.\",\r\n    \"data_start\": \"2011-09-13\",\r\n
+        \   \"data_end\": \"2018-06-28\",\r\n    \"data_quote_start\": \"2014-02-24T17:43:05.0000000Z\",\r\n
+        \   \"data_quote_end\": \"2018-06-28T10:04:32.9995594Z\",\r\n    \"data_orderbook_start\":
+        \"2014-02-24T17:43:05.0000000Z\",\r\n    \"data_orderbook_end\": \"2018-06-28T10:04:32.9995594Z\",\r\n
+        \   \"data_trade_start\": \"2011-09-13T13:53:36.0000000Z\",\r\n    \"data_trade_end\":
+        \"2018-06-27T14:10:00.0000000Z\",\r\n    \"data_trade_count\": 51653022,\r\n
+        \   \"data_symbols_count\": 15\r\n  },\r\n  {\r\n    \"exchange_id\": \"OKCOIN_CNY\",\r\n
+        \   \"website\": \"https://www.okcoin.cn/\",\r\n    \"name\": \"OKCoin CNY\",\r\n
+        \   \"data_start\": \"2013-06-12\",\r\n    \"data_end\": \"2018-03-09\",\r\n
+        \   \"data_quote_start\": \"2015-02-15T12:53:50.3430000Z\",\r\n    \"data_quote_end\":
+        \"2018-03-09T23:34:52.5800000Z\",\r\n    \"data_orderbook_start\": \"2015-02-15T12:53:50.3430000Z\",\r\n
+        \   \"data_orderbook_end\": \"2018-03-09T23:34:52.5800000Z\",\r\n    \"data_trade_start\":
+        \"2013-06-12T14:24:24.0000000Z\",\r\n    \"data_trade_end\": \"2017-11-01T16:30:39.7077259Z\",\r\n
+        \   \"data_trade_count\": 2085401174,\r\n    \"data_symbols_count\": 2\r\n
+        \ },\r\n  {\r\n    \"exchange_id\": \"BITTREX\",\r\n    \"website\": \"https://bittrex.com/\",\r\n
+        \   \"name\": \"Bittrex\",\r\n    \"data_start\": \"2017-01-26\",\r\n    \"data_end\":
+        \"2018-06-28\",\r\n    \"data_quote_start\": \"2017-03-14T20:03:47.4782440Z\",\r\n
+        \   \"data_quote_end\": \"2018-06-28T10:19:34.4042879Z\",\r\n    \"data_orderbook_start\":
+        \"2017-03-14T20:03:47.4782440Z\",\r\n    \"data_orderbook_end\": \"2018-06-28T10:19:34.4042879Z\",\r\n
+        \   \"data_trade_start\": \"2017-01-26T19:48:55.0000000Z\",\r\n    \"data_trade_end\":
+        \"2018-06-27T14:09:43.4270000Z\",\r\n    \"data_trade_count\": 304302299,\r\n
+        \   \"data_symbols_count\": 382\r\n  },\r\n  {\r\n    \"exchange_id\": \"POLONIEX\",\r\n
+        \   \"website\": \"https://poloniex.com/\",\r\n    \"name\": \"POLONIEX\",\r\n
+        \   \"data_start\": \"2016-05-29\",\r\n    \"data_end\": \"2018-06-28\",\r\n
+        \   \"data_quote_start\": \"2016-06-12T11:53:38.1523879Z\",\r\n    \"data_quote_end\":
+        \"2018-06-28T10:18:49.2133296Z\",\r\n    \"data_orderbook_start\": \"2016-06-12T11:53:38.1523879Z\",\r\n
+        \   \"data_orderbook_end\": \"2018-06-28T10:18:49.2133296Z\",\r\n    \"data_trade_start\":
+        \"2016-05-29T15:05:08.0000000Z\",\r\n    \"data_trade_end\": \"2018-06-27T14:09:41.0000000Z\",\r\n
+        \   \"data_trade_count\": 247104988,\r\n    \"data_symbols_count\": 175\r\n
+        \ },\r\n  {\r\n    \"exchange_id\": \"BITFINEX\",\r\n    \"website\": \"https://www.bitfinex.com/\",\r\n
+        \   \"name\": \"Bitfinex\",\r\n    \"data_start\": \"2013-03-31\",\r\n    \"data_end\":
+        \"2018-06-28\",\r\n    \"data_quote_start\": \"2014-02-24T17:43:05.0000000Z\",\r\n
+        \   \"data_quote_end\": \"2018-06-28T10:19:02.4922152Z\",\r\n    \"data_orderbook_start\":
+        \"2014-02-24T17:43:05.0000000Z\",\r\n    \"data_orderbook_end\": \"2018-06-28T10:19:02.4922152Z\",\r\n
+        \   \"data_trade_start\": \"2013-03-31T22:07:48.0000000Z\",\r\n    \"data_trade_end\":
+        \"2018-06-27T14:10:04.0000000Z\",\r\n    \"data_trade_count\": 206842881,\r\n
+        \   \"data_symbols_count\": 248\r\n  },\r\n  {\r\n    \"exchange_id\": \"KRAKEN\",\r\n
+        \   \"website\": \"https://www.kraken.com/\",\r\n    \"name\": \"Kraken\",\r\n
+        \   \"data_start\": \"2013-10-22\",\r\n    \"data_end\": \"2018-06-28\",\r\n
+        \   \"data_quote_start\": \"2014-07-31T13:05:46.0000000Z\",\r\n    \"data_quote_end\":
+        \"2018-06-28T10:20:12.6810444Z\",\r\n    \"data_orderbook_start\": \"2014-07-31T13:05:46.0000000Z\",\r\n
+        \   \"data_orderbook_end\": \"2018-06-28T10:20:12.6810444Z\",\r\n    \"data_trade_start\":
+        \"2013-10-22T23:09:46.8630000Z\",\r\n    \"data_trade_end\": \"2018-06-27T14:10:02.3170000Z\",\r\n
+        \   \"data_trade_count\": 136336328,\r\n    \"data_symbols_count\": 93\r\n
+        \ },\r\n  {\r\n    \"exchange_id\": \"HUOBIPRO\",\r\n    \"website\": \"https://www.huobi.pro/\",\r\n
+        \   \"name\": \"Huobi Pro\",\r\n    \"data_start\": \"2018-01-22\",\r\n    \"data_end\":
+        \"2018-06-28\",\r\n    \"data_quote_start\": \"2018-01-24T00:22:17.2456560Z\",\r\n
+        \   \"data_quote_end\": \"2018-06-28T10:10:26.6000000Z\",\r\n    \"data_orderbook_start\":
+        \"2018-01-24T00:22:17.2456560Z\",\r\n    \"data_orderbook_end\": \"2018-06-28T10:10:26.6000000Z\",\r\n
+        \   \"data_trade_start\": \"2018-01-22T12:55:12.5650000Z\",\r\n    \"data_trade_end\":
+        \"2018-06-27T14:09:53.9570000Z\",\r\n    \"data_trade_count\": 126671326,\r\n
+        \   \"data_symbols_count\": 259\r\n  },\r\n  {\r\n    \"exchange_id\": \"HITBTC\",\r\n
+        \   \"website\": \"https://hitbtc.com/\",\r\n    \"name\": \"HitBTC\",\r\n
+        \   \"data_start\": \"2013-12-27\",\r\n    \"data_end\": \"2018-06-28\",\r\n
+        \   \"data_quote_start\": \"2017-03-18T22:53:44.4091161Z\",\r\n    \"data_quote_end\":
+        \"2018-06-28T10:18:59.9821641Z\",\r\n    \"data_orderbook_start\": \"2017-03-18T22:53:44.4091161Z\",\r\n
+        \   \"data_orderbook_end\": \"2018-06-28T10:18:59.9821641Z\",\r\n    \"data_trade_start\":
+        \"2013-12-27T08:23:37.0000000Z\",\r\n    \"data_trade_end\": \"2018-06-27T14:10:04.0000000Z\",\r\n
+        \   \"data_trade_count\": 120187742,\r\n    \"data_symbols_count\": 916\r\n
+        \ },\r\n  {\r\n    \"exchange_id\": \"BTCCHINA\",\r\n    \"website\": \"https://www.btcchina.com/\",\r\n
+        \   \"name\": \"BTCCHINA\",\r\n    \"data_start\": \"2011-06-13\",\r\n    \"data_end\":
+        \"2018-03-09\",\r\n    \"data_quote_start\": \"2015-03-29T04:20:18.0000000Z\",\r\n
+        \   \"data_quote_end\": \"2018-03-09T23:36:46.2227576Z\",\r\n    \"data_orderbook_start\":
+        \"2015-03-29T04:20:18.0000000Z\",\r\n    \"data_orderbook_end\": \"2018-03-09T23:36:46.2227576Z\",\r\n
+        \   \"data_trade_start\": \"2011-06-13T05:13:24.0000000Z\",\r\n    \"data_trade_end\":
+        \"2018-03-09T22:06:20.0000000Z\",\r\n    \"data_trade_count\": 118500419,\r\n
+        \   \"data_symbols_count\": 3\r\n  },\r\n  {\r\n    \"exchange_id\": \"BITHUMB\",\r\n
+        \   \"website\": \"https://www.bithumb.com/\",\r\n    \"name\": \"BITHUMB\",\r\n
+        \   \"data_start\": \"2017-09-21\",\r\n    \"data_end\": \"2018-06-28\",\r\n
+        \   \"data_quote_start\": \"2017-09-21T13:50:30.0371289Z\",\r\n    \"data_quote_end\":
+        \"2018-06-28T10:16:31.6445642Z\",\r\n    \"data_orderbook_start\": \"2017-09-21T13:50:30.0371289Z\",\r\n
+        \   \"data_orderbook_end\": \"2018-06-28T10:16:31.6445642Z\",\r\n    \"data_trade_start\":
+        \"2017-09-21T13:43:23.0000000Z\",\r\n    \"data_trade_end\": \"2018-06-27T14:09:43.0000000Z\",\r\n
+        \   \"data_trade_count\": 92086151,\r\n    \"data_symbols_count\": 35\r\n
+        \ },\r\n  {\r\n    \"exchange_id\": \"COINONE\",\r\n    \"website\": \"https://coinone.co.kr/\",\r\n
+        \   \"name\": \"coinone\",\r\n    \"data_start\": \"2017-09-20\",\r\n    \"data_end\":
+        \"2018-06-28\",\r\n    \"data_quote_start\": \"2017-09-21T13:36:45.5891048Z\",\r\n
+        \   \"data_quote_end\": \"2018-06-28T10:16:33.2368797Z\",\r\n    \"data_orderbook_start\":
+        \"2017-09-21T13:36:45.5891048Z\",\r\n    \"data_orderbook_end\": \"2018-06-28T10:16:33.2368797Z\",\r\n
+        \   \"data_trade_start\": \"2017-09-20T13:37:21.0000000Z\",\r\n    \"data_trade_end\":
+        \"2018-06-27T14:09:32.0000000Z\",\r\n    \"data_trade_count\": 63092458,\r\n
+        \   \"data_symbols_count\": 8\r\n  },\r\n  {\r\n    \"exchange_id\": \"OKEX\",\r\n
+        \   \"website\": \"https://www.okex.com/\",\r\n    \"name\": \"OKEx\",\r\n
+        \   \"data_start\": \"2017-12-01\",\r\n    \"data_end\": \"2018-06-28\",\r\n
+        \   \"data_quote_start\": \"2017-12-18T21:01:51.6121385Z\",\r\n    \"data_quote_end\":
+        \"2018-06-28T10:14:39.5456905Z\",\r\n    \"data_orderbook_start\": \"2017-12-18T21:01:51.6121385Z\",\r\n
+        \   \"data_orderbook_end\": \"2018-06-28T10:14:39.5456905Z\",\r\n    \"data_trade_start\":
+        \"2017-12-01T15:26:32.0000000Z\",\r\n    \"data_trade_end\": \"2018-06-27T14:09:56.0000000Z\",\r\n
+        \   \"data_trade_count\": 53057542,\r\n    \"data_symbols_count\": 587\r\n
+        \ },\r\n  {\r\n    \"exchange_id\": \"OKCOIN_USD\",\r\n    \"website\": \"https://www.okcoin.com/\",\r\n
+        \   \"name\": \"OKCoin USD\",\r\n    \"data_start\": \"2015-02-14\",\r\n    \"data_end\":
+        \"2018-06-28\",\r\n    \"data_quote_start\": \"2015-02-15T12:53:46.6330000Z\",\r\n
+        \   \"data_quote_end\": \"2018-06-28T10:17:12.3923883Z\",\r\n    \"data_orderbook_start\":
+        \"2015-02-15T12:53:46.6330000Z\",\r\n    \"data_orderbook_end\": \"2018-06-28T10:17:12.3923883Z\",\r\n
+        \   \"data_trade_start\": \"2015-02-14T16:15:05.5900000Z\",\r\n    \"data_trade_end\":
+        \"2018-06-27T14:00:00.0000000Z\",\r\n    \"data_trade_count\": 20120699,\r\n
+        \   \"data_symbols_count\": 5\r\n  },\r\n  {\r\n    \"exchange_id\": \"BTCTRADE\",\r\n
+        \   \"website\": \"https://www.btctrade.com/\",\r\n    \"name\": \"BTCTRADE\",\r\n
+        \   \"data_start\": \"2015-05-17\",\r\n    \"data_end\": \"2018-06-28\",\r\n
+        \   \"data_quote_start\": \"2015-05-17T14:57:14.3470000Z\",\r\n    \"data_quote_end\":
+        \"2018-06-28T02:19:58.0258620Z\",\r\n    \"data_orderbook_start\": \"2015-05-17T14:57:14.3470000Z\",\r\n
+        \   \"data_orderbook_end\": \"2018-06-28T02:19:58.0258620Z\",\r\n    \"data_trade_start\":
+        \"2015-05-17T15:04:12.0000000Z\",\r\n    \"data_trade_end\": \"2018-03-09T21:52:49.0000000Z\",\r\n
+        \   \"data_trade_count\": 19595199,\r\n    \"data_symbols_count\": 6\r\n  },\r\n
+        \ {\r\n    \"exchange_id\": \"BITMEX\",\r\n    \"website\": \"https://www.bitmex.com/\",\r\n
+        \   \"name\": \"BitMEX\",\r\n    \"data_start\": \"2015-09-25\",\r\n    \"data_end\":
+        \"2018-06-28\",\r\n    \"data_quote_start\": \"2017-03-14T20:04:08.1113853Z\",\r\n
+        \   \"data_quote_end\": \"2018-06-28T10:19:02.3040000Z\",\r\n    \"data_orderbook_start\":
+        \"2017-03-14T20:04:08.1113853Z\",\r\n    \"data_orderbook_end\": \"2018-06-28T10:19:02.3040000Z\",\r\n
+        \   \"data_trade_start\": \"2015-09-25T12:34:25.0000000Z\",\r\n    \"data_trade_end\":
+        \"2018-06-27T14:09:51.5800000Z\",\r\n    \"data_trade_count\": 11185270,\r\n
+        \   \"data_symbols_count\": 72\r\n  },\r\n  {\r\n    \"exchange_id\": \"GEMINI\",\r\n
+        \   \"website\": \"https://gemini.com/\",\r\n    \"name\": \"Gemini\",\r\n
+        \   \"data_start\": \"2015-10-08\",\r\n    \"data_end\": \"2018-06-28\",\r\n
+        \   \"data_quote_start\": \"2017-03-18T22:53:42.0948480Z\",\r\n    \"data_quote_end\":
+        \"2018-06-28T10:17:39.3675063Z\",\r\n    \"data_orderbook_start\": \"2017-03-18T22:53:42.0948480Z\",\r\n
+        \   \"data_orderbook_end\": \"2018-06-28T10:17:39.3675063Z\",\r\n    \"data_trade_start\":
+        \"2015-10-08T13:40:07.8010000Z\",\r\n    \"data_trade_end\": \"2018-06-27T14:09:45.2710000Z\",\r\n
+        \   \"data_trade_count\": 9795377,\r\n    \"data_symbols_count\": 6\r\n  },\r\n
+        \ {\r\n    \"exchange_id\": \"ITBIT\",\r\n    \"website\": \"https://www.itbit.com/\",\r\n
+        \   \"name\": \"itBit\",\r\n    \"data_start\": \"2013-08-25\",\r\n    \"data_end\":
+        \"2018-06-28\",\r\n    \"data_quote_start\": \"2015-05-26T18:24:28.9330000Z\",\r\n
+        \   \"data_quote_end\": \"2018-06-28T10:18:58.2205002Z\",\r\n    \"data_orderbook_start\":
+        \"2015-05-26T18:24:28.9330000Z\",\r\n    \"data_orderbook_end\": \"2018-06-28T10:18:58.2205002Z\",\r\n
+        \   \"data_trade_start\": \"2013-08-25T00:21:44.0000000Z\",\r\n    \"data_trade_end\":
+        \"2018-06-27T14:08:03.0000000Z\",\r\n    \"data_trade_count\": 2858355,\r\n
+        \   \"data_symbols_count\": 3\r\n  },\r\n  {\r\n    \"exchange_id\": \"HUOBI\",\r\n
+        \   \"website\": \"https://www.huobi.com/\",\r\n    \"name\": \"Huobi\",\r\n
+        \   \"data_start\": \"2015-03-29\",\r\n    \"data_end\": \"2018-03-09\",\r\n
+        \   \"data_quote_start\": \"2015-03-29T21:46:06.2630000Z\",\r\n    \"data_quote_end\":
+        \"2018-03-09T23:36:50.7701113Z\",\r\n    \"data_orderbook_start\": \"2015-03-29T21:46:06.2630000Z\",\r\n
+        \   \"data_orderbook_end\": \"2018-03-09T23:36:50.7701113Z\",\r\n    \"data_trade_start\":
+        \"2015-03-29T21:46:08.7030000Z\",\r\n    \"data_trade_end\": \"2018-03-09T22:01:33.0000000Z\",\r\n
+        \   \"data_trade_count\": 538686774,\r\n    \"data_symbols_count\": 2\r\n
+        \ },\r\n  {\r\n    \"exchange_id\": \"CRYPTOPIA\",\r\n    \"website\": \"https://www.cryptopia.co.nz/\",\r\n
+        \   \"name\": \"Cryptopia\",\r\n    \"data_start\": \"2014-12-07\",\r\n    \"data_end\":
+        \"2018-06-26\",\r\n    \"data_quote_start\": \"2017-03-14T20:03:49.1491232Z\",\r\n
+        \   \"data_quote_end\": \"2018-06-26T22:47:14.4636403Z\",\r\n    \"data_orderbook_start\":
+        \"2017-03-14T20:03:49.1491232Z\",\r\n    \"data_orderbook_end\": \"2018-06-26T22:47:14.4636403Z\",\r\n
+        \   \"data_trade_start\": \"2014-12-07T20:04:05.0000000Z\",\r\n    \"data_trade_end\":
+        \"2018-06-26T22:34:38.0000000Z\",\r\n    \"data_trade_count\": 68138895,\r\n
+        \   \"data_symbols_count\": 2415\r\n  },\r\n  {\r\n    \"exchange_id\": \"BTC-E\",\r\n
+        \   \"website\": \"https://btc-e.com/\",\r\n    \"name\": \"BTC-e\",\r\n    \"data_start\":
+        \"2011-08-14\",\r\n    \"data_end\": \"2018-03-09\",\r\n    \"data_quote_start\":
+        \"2014-02-24T17:43:05.0000000Z\",\r\n    \"data_quote_end\": \"2018-03-09T23:36:50.7544837Z\",\r\n
+        \   \"data_orderbook_start\": \"2014-02-24T17:43:05.0000000Z\",\r\n    \"data_orderbook_end\":
+        \"2018-03-09T23:36:50.7544837Z\",\r\n    \"data_trade_start\": \"2011-08-14T14:14:40.0000000Z\",\r\n
+        \   \"data_trade_end\": \"2018-03-09T22:08:25.6800000Z\",\r\n    \"data_trade_count\":
+        65974803,\r\n    \"data_symbols_count\": 24\r\n  },\r\n  {\r\n    \"exchange_id\":
+        \"COINCHECK\",\r\n    \"website\": \"https://coincheck.com/\",\r\n    \"name\":
+        \"coincheck\",\r\n    \"data_start\": \"2017-03-14\",\r\n    \"data_end\":
+        \"2018-06-26\",\r\n    \"data_quote_start\": \"2017-03-14T20:03:20.5307029Z\",\r\n
+        \   \"data_quote_end\": \"2018-06-26T22:42:20.4394217Z\",\r\n    \"data_orderbook_start\":
+        \"2017-03-14T20:03:20.5307029Z\",\r\n    \"data_orderbook_end\": \"2018-06-26T22:42:20.4394217Z\",\r\n
+        \   \"data_trade_start\": \"2017-03-14T20:04:46.0000000Z\",\r\n    \"data_trade_end\":
+        \"2017-12-18T10:58:56.0000000Z\",\r\n    \"data_trade_count\": 59142974,\r\n
+        \   \"data_symbols_count\": 1\r\n  },\r\n  {\r\n    \"exchange_id\": \"LIQUI\",\r\n
+        \   \"website\": \"https://liqui.io/\",\r\n    \"name\": \"Liqui\",\r\n    \"data_start\":
+        \"2016-09-08\",\r\n    \"data_end\": \"2018-06-26\",\r\n    \"data_quote_start\":
+        \"2017-09-21T13:45:51.3610312Z\",\r\n    \"data_quote_end\": \"2018-06-26T22:46:11.5401534Z\",\r\n
+        \   \"data_orderbook_start\": \"2017-09-21T13:45:51.3610312Z\",\r\n    \"data_orderbook_end\":
+        \"2018-06-26T22:46:11.5401534Z\",\r\n    \"data_trade_start\": \"2016-09-08T12:23:19.0000000Z\",\r\n
+        \   \"data_trade_end\": \"2018-06-26T22:46:28.0000000Z\",\r\n    \"data_trade_count\":
+        51286181,\r\n    \"data_symbols_count\": 235\r\n  },\r\n  {\r\n    \"exchange_id\":
+        \"EXMO\",\r\n    \"website\": \"https://exmo.com/\",\r\n    \"name\": \"EXMO\",\r\n
+        \   \"data_start\": \"2016-02-17\",\r\n    \"data_end\": \"2018-06-26\",\r\n
+        \   \"data_quote_start\": \"2017-03-14T20:04:15.0007802Z\",\r\n    \"data_quote_end\":
+        \"2018-06-26T22:47:32.7425943Z\",\r\n    \"data_orderbook_start\": \"2017-03-14T20:04:15.0007802Z\",\r\n
+        \   \"data_orderbook_end\": \"2018-06-26T22:47:32.7425943Z\",\r\n    \"data_trade_start\":
+        \"2016-02-17T16:38:11.0000000Z\",\r\n    \"data_trade_end\": \"2018-06-26T22:47:08.0000000Z\",\r\n
+        \   \"data_trade_count\": 43956873,\r\n    \"data_symbols_count\": 63\r\n
+        \ },\r\n  {\r\n    \"exchange_id\": \"YOBIT\",\r\n    \"website\": \"https://yobit.net/en/\",\r\n
+        \   \"name\": \"YObit\",\r\n    \"data_start\": \"2015-01-06\",\r\n    \"data_end\":
+        \"2018-06-28\",\r\n    \"data_quote_start\": \"2017-03-18T22:53:47.2011734Z\",\r\n
+        \   \"data_quote_end\": \"2018-06-28T10:34:13.5694407Z\",\r\n    \"data_orderbook_start\":
+        \"2017-03-18T22:53:47.2011734Z\",\r\n    \"data_orderbook_end\": \"2018-06-28T10:34:13.5694407Z\",\r\n
+        \   \"data_trade_start\": \"2015-01-06T19:51:51.0000000Z\",\r\n    \"data_trade_end\":
+        \"2018-06-27T14:02:50.0000000Z\",\r\n    \"data_trade_count\": 26815300,\r\n
+        \   \"data_symbols_count\": 7370\r\n  },\r\n  {\r\n    \"exchange_id\": \"BITFLYER\",\r\n
+        \   \"website\": \"https://bitflyer.jp/\",\r\n    \"name\": \"bitFlyer\",\r\n
+        \   \"data_start\": \"2017-11-28\",\r\n    \"data_end\": \"2018-06-26\",\r\n
+        \   \"data_quote_start\": \"2017-11-29T01:10:28.2891461Z\",\r\n    \"data_quote_end\":
+        \"2018-06-26T22:43:51.2748187Z\",\r\n    \"data_orderbook_start\": \"2017-11-29T01:10:28.2891461Z\",\r\n
+        \   \"data_orderbook_end\": \"2018-06-26T22:43:51.2748187Z\",\r\n    \"data_trade_start\":
+        \"2017-11-28T21:25:01.0000000Z\",\r\n    \"data_trade_end\": \"2018-06-26T22:43:49.0000000Z\",\r\n
+        \   \"data_trade_count\": 17752579,\r\n    \"data_symbols_count\": 3\r\n  },\r\n
+        \ {\r\n    \"exchange_id\": \"ZAIF\",\r\n    \"website\": \"https://zaif.jp/\",\r\n
+        \   \"name\": \"Zaif\",\r\n    \"data_start\": \"2017-12-14\",\r\n    \"data_end\":
+        \"2018-06-26\",\r\n    \"data_quote_start\": \"2017-12-28T21:48:26.7161574Z\",\r\n
+        \   \"data_quote_end\": \"2018-06-26T22:44:19.7932999Z\",\r\n    \"data_orderbook_start\":
+        \"2017-12-28T21:48:26.7161574Z\",\r\n    \"data_orderbook_end\": \"2018-06-26T22:44:19.7932999Z\",\r\n
+        \   \"data_trade_start\": \"2017-12-14T05:11:55.0000000Z\",\r\n    \"data_trade_end\":
+        \"2018-06-26T22:43:38.0000000Z\",\r\n    \"data_trade_count\": 16031739,\r\n
+        \   \"data_symbols_count\": 15\r\n  },\r\n  {\r\n    \"exchange_id\": \"KORBIT\",\r\n
+        \   \"website\": \"https://www.korbit.co.kr\",\r\n    \"name\": \"Korbit\",\r\n
+        \   \"data_start\": \"2013-09-03\",\r\n    \"data_end\": \"2018-06-26\",\r\n
+        \   \"data_quote_start\": \"2017-03-18T22:53:39.4192811Z\",\r\n    \"data_quote_end\":
+        \"2018-06-26T22:42:57.4625019Z\",\r\n    \"data_orderbook_start\": \"2017-03-18T22:53:39.4192811Z\",\r\n
+        \   \"data_orderbook_end\": \"2018-06-26T22:42:57.4625019Z\",\r\n    \"data_trade_start\":
+        \"2013-09-03T06:31:37.0000000Z\",\r\n    \"data_trade_end\": \"2018-06-26T22:42:55.0250000Z\",\r\n
+        \   \"data_trade_count\": 14253548,\r\n    \"data_symbols_count\": 4\r\n  },\r\n
+        \ {\r\n    \"exchange_id\": \"GATEIO\",\r\n    \"website\": \"https://gate.io/\",\r\n
+        \   \"name\": \"Gate.io\",\r\n    \"data_start\": \"2017-12-28\",\r\n    \"data_end\":
+        \"2018-06-26\",\r\n    \"data_quote_start\": \"2017-12-28T21:49:04.6063124Z\",\r\n
+        \   \"data_quote_end\": \"2018-06-26T22:47:40.2784571Z\",\r\n    \"data_orderbook_start\":
+        \"2017-12-28T21:49:04.6063124Z\",\r\n    \"data_orderbook_end\": \"2018-06-26T22:47:40.2784571Z\",\r\n
+        \   \"data_trade_start\": \"2017-12-28T17:33:30.0000000Z\",\r\n    \"data_trade_end\":
+        \"2018-06-26T22:47:08.0000000Z\",\r\n    \"data_trade_count\": 11908398,\r\n
+        \   \"data_symbols_count\": 364\r\n  },\r\n  {\r\n    \"exchange_id\": \"BTC38\",\r\n
+        \   \"website\": \"http://www.btc38.com\",\r\n    \"name\": \"BTC38\",\r\n
+        \   \"data_start\": \"2017-03-16\",\r\n    \"data_end\": \"2018-01-09\",\r\n
+        \   \"data_quote_start\": \"2017-03-18T22:53:45.3558927Z\",\r\n    \"data_quote_end\":
+        \"2018-01-09T00:02:43.5604799Z\",\r\n    \"data_orderbook_start\": \"2017-03-18T22:53:45.3558927Z\",\r\n
+        \   \"data_orderbook_end\": \"2018-01-09T00:02:43.5604799Z\",\r\n    \"data_trade_start\":
+        \"2017-03-16T13:30:42.0000000Z\",\r\n    \"data_trade_end\": \"2017-10-31T03:58:21.0000000Z\",\r\n
+        \   \"data_trade_count\": 11016890,\r\n    \"data_symbols_count\": 53\r\n
+        \ },\r\n  {\r\n    \"exchange_id\": \"MTGOX\",\r\n    \"website\": \"https://www.mtgox.com/\",\r\n
+        \   \"name\": \"mtgox\",\r\n    \"data_start\": \"2010-07-17\",\r\n    \"data_end\":
+        \"2014-02-25\",\r\n    \"data_trade_start\": \"2010-07-17T23:09:17.0000000Z\",\r\n
+        \   \"data_trade_end\": \"2014-02-25T01:59:06.0000000Z\",\r\n    \"data_trade_count\":
+        10050212,\r\n    \"data_symbols_count\": 15\r\n  },\r\n  {\r\n    \"exchange_id\":
+        \"WEXNZ\",\r\n    \"website\": \"https://wex.nz/\",\r\n    \"name\": \"WexNz\",\r\n
+        \   \"data_start\": \"2017-12-22\",\r\n    \"data_end\": \"2018-06-26\",\r\n
+        \   \"data_quote_start\": \"2017-12-24T13:03:42.9064646Z\",\r\n    \"data_quote_end\":
+        \"2018-06-26T22:44:58.5409475Z\",\r\n    \"data_orderbook_start\": \"2017-12-24T13:03:42.9064646Z\",\r\n
+        \   \"data_orderbook_end\": \"2018-06-26T22:44:58.5409475Z\",\r\n    \"data_trade_start\":
+        \"2017-12-22T07:31:16.0000000Z\",\r\n    \"data_trade_end\": \"2018-06-26T22:44:15.0000000Z\",\r\n
+        \   \"data_trade_count\": 9793891,\r\n    \"data_symbols_count\": 52\r\n  },\r\n
+        \ {\r\n    \"exchange_id\": \"KUCOIN\",\r\n    \"website\": \"https://kucoin.com/\",\r\n
+        \   \"name\": \"Kucoin\",\r\n    \"data_start\": \"2018-01-24\",\r\n    \"data_end\":
+        \"2018-06-26\",\r\n    \"data_quote_start\": \"2018-01-24T00:22:08.7776711Z\",\r\n
+        \   \"data_quote_end\": \"2018-06-26T22:46:54.2540000Z\",\r\n    \"data_orderbook_start\":
+        \"2018-01-24T00:22:08.7776711Z\",\r\n    \"data_orderbook_end\": \"2018-06-26T22:46:54.2540000Z\",\r\n
+        \   \"data_trade_start\": \"2018-01-24T15:12:15.0000000Z\",\r\n    \"data_trade_end\":
+        \"2018-06-26T22:46:23.0000000Z\",\r\n    \"data_trade_count\": 8754714,\r\n
+        \   \"data_symbols_count\": 400\r\n  },\r\n  {\r\n    \"exchange_id\": \"LAKEBTC\",\r\n
+        \   \"website\": \"https://www.lakebtc.com/\",\r\n    \"name\": \"LakeBTC\",\r\n
+        \   \"data_start\": \"2014-03-01\",\r\n    \"data_end\": \"2018-06-26\",\r\n
+        \   \"data_quote_start\": \"2017-03-18T22:53:40.7300076Z\",\r\n    \"data_quote_end\":
+        \"2018-06-26T22:42:41.3939670Z\",\r\n    \"data_orderbook_start\": \"2017-03-18T22:53:40.7300076Z\",\r\n
+        \   \"data_orderbook_end\": \"2018-06-26T22:42:41.3939670Z\",\r\n    \"data_trade_start\":
+        \"2014-03-01T12:01:39.0000000Z\",\r\n    \"data_trade_end\": \"2017-09-07T12:18:53.0000000Z\",\r\n
+        \   \"data_trade_count\": 8318865,\r\n    \"data_symbols_count\": 10\r\n  },\r\n
+        \ {\r\n    \"exchange_id\": \"BLEUTRADE\",\r\n    \"website\": \"https://bleutrade.com\",\r\n
+        \   \"name\": \"Bleutrade\",\r\n    \"data_start\": \"2017-02-16\",\r\n    \"data_end\":
+        \"2018-06-26\",\r\n    \"data_quote_start\": \"2017-03-14T20:04:25.7449674Z\",\r\n
+        \   \"data_quote_end\": \"2018-06-26T22:47:14.1889417Z\",\r\n    \"data_orderbook_start\":
+        \"2017-03-14T20:04:25.7449674Z\",\r\n    \"data_orderbook_end\": \"2018-06-26T22:47:14.1889417Z\",\r\n
+        \   \"data_trade_start\": \"2017-02-16T20:09:59.0000000Z\",\r\n    \"data_trade_end\":
+        \"2018-06-26T22:45:53.0000000Z\",\r\n    \"data_trade_count\": 7730767,\r\n
+        \   \"data_symbols_count\": 302\r\n  },\r\n  {\r\n    \"exchange_id\": \"BITCOINID\",\r\n
+        \   \"website\": \"https://indodax.com/\",\r\n    \"name\": \"Indodax\",\r\n
+        \   \"data_start\": \"2018-01-05\",\r\n    \"data_end\": \"2018-06-26\",\r\n
+        \   \"data_quote_start\": \"2018-01-05T15:56:05.6259966Z\",\r\n    \"data_quote_end\":
+        \"2018-06-26T22:45:19.6634534Z\",\r\n    \"data_orderbook_start\": \"2018-01-05T15:56:05.6259966Z\",\r\n
+        \   \"data_orderbook_end\": \"2018-06-26T22:45:19.6634534Z\",\r\n    \"data_trade_start\":
+        \"2018-01-05T15:51:29.0000000Z\",\r\n    \"data_trade_end\": \"2018-06-26T22:44:42.0000000Z\",\r\n
+        \   \"data_trade_count\": 6306826,\r\n    \"data_symbols_count\": 21\r\n  },\r\n
+        \ {\r\n    \"exchange_id\": \"QUOINE\",\r\n    \"website\": \"https://www.qryptos.com/\",\r\n
+        \   \"name\": \"QRYPTOS\",\r\n    \"data_start\": \"2017-05-22\",\r\n    \"data_end\":
+        \"2018-06-26\",\r\n    \"data_quote_start\": \"2017-08-29T15:53:54.7372595Z\",\r\n
+        \   \"data_quote_end\": \"2018-06-26T22:45:53.7231495Z\",\r\n    \"data_orderbook_start\":
+        \"2017-08-29T15:53:54.7372595Z\",\r\n    \"data_orderbook_end\": \"2018-06-26T22:45:53.7231495Z\",\r\n
+        \   \"data_trade_start\": \"2017-05-22T18:21:41.0000000Z\",\r\n    \"data_trade_end\":
+        \"2018-06-26T22:43:26.0000000Z\",\r\n    \"data_trade_count\": 6119590,\r\n
+        \   \"data_symbols_count\": 103\r\n  },\r\n  {\r\n    \"exchange_id\": \"TIDEX\",\r\n
+        \   \"website\": \"https://tidex.com/\",\r\n    \"name\": \"Tidex\",\r\n    \"data_start\":
+        \"2017-02-10\",\r\n    \"data_end\": \"2018-06-26\",\r\n    \"data_quote_start\":
+        \"2017-12-28T21:49:03.2916366Z\",\r\n    \"data_quote_end\": \"2018-06-26T22:46:00.3939967Z\",\r\n
+        \   \"data_orderbook_start\": \"2017-12-28T21:49:03.2916366Z\",\r\n    \"data_orderbook_end\":
+        \"2018-06-26T22:46:00.3939967Z\",\r\n    \"data_trade_start\": \"2017-02-10T20:18:18.0000000Z\",\r\n
+        \   \"data_trade_end\": \"2018-06-26T22:44:44.0000000Z\",\r\n    \"data_trade_count\":
+        5471147,\r\n    \"data_symbols_count\": 325\r\n  },\r\n  {\r\n    \"exchange_id\":
+        \"ACX\",\r\n    \"website\": \"https://acx.io/\",\r\n    \"name\": \"ACX\",\r\n
+        \   \"data_start\": \"2017-09-13\",\r\n    \"data_end\": \"2018-06-26\",\r\n
+        \   \"data_quote_start\": \"2017-09-21T13:50:21.9301963Z\",\r\n    \"data_quote_end\":
+        \"2018-06-26T22:43:34.2874443Z\",\r\n    \"data_orderbook_start\": \"2017-09-21T13:50:21.9301963Z\",\r\n
+        \   \"data_orderbook_end\": \"2018-06-26T22:43:34.2874443Z\",\r\n    \"data_trade_start\":
+        \"2017-09-13T10:58:32.0000000Z\",\r\n    \"data_trade_end\": \"2018-06-26T22:09:45.0000000Z\",\r\n
+        \   \"data_trade_count\": 5009113,\r\n    \"data_symbols_count\": 13\r\n  },\r\n
+        \ {\r\n    \"exchange_id\": \"BITSO\",\r\n    \"website\": \"https://bitso.com/\",\r\n
+        \   \"name\": \"Bitso\",\r\n    \"data_start\": \"2017-08-29\",\r\n    \"data_end\":
+        \"2018-06-26\",\r\n    \"data_quote_start\": \"2017-08-29T15:47:12.6045423Z\",\r\n
+        \   \"data_quote_end\": \"2018-06-26T22:47:19.2752607Z\",\r\n    \"data_orderbook_start\":
+        \"2017-08-29T15:47:12.6045423Z\",\r\n    \"data_orderbook_end\": \"2018-06-26T22:47:19.2752607Z\",\r\n
+        \   \"data_trade_start\": \"2017-08-29T03:39:38.0000000Z\",\r\n    \"data_trade_end\":
+        \"2018-06-26T22:43:40.0000000Z\",\r\n    \"data_trade_count\": 4424601,\r\n
+        \   \"data_symbols_count\": 11\r\n  },\r\n  {\r\n    \"exchange_id\": \"LIVECOIN\",\r\n
+        \   \"website\": \"https://www.livecoin.net/\",\r\n    \"name\": \"LiveCoin\",\r\n
+        \   \"data_start\": \"2017-12-28\",\r\n    \"data_end\": \"2018-06-26\",\r\n
+        \   \"data_quote_start\": \"2017-12-28T21:41:59.3272652Z\",\r\n    \"data_quote_end\":
+        \"2018-06-26T22:47:31.1607944Z\",\r\n    \"data_orderbook_start\": \"2017-12-28T21:41:59.3272652Z\",\r\n
+        \   \"data_orderbook_end\": \"2018-06-26T22:47:31.1607944Z\",\r\n    \"data_trade_start\":
+        \"2017-12-28T20:44:07.0000000Z\",\r\n    \"data_trade_end\": \"2018-06-26T22:43:54.0000000Z\",\r\n
+        \   \"data_trade_count\": 4150460,\r\n    \"data_symbols_count\": 669\r\n
+        \ },\r\n  {\r\n    \"exchange_id\": \"MIXCOINS\",\r\n    \"website\": \"https://mixcoins.com/\",\r\n
+        \   \"name\": \"MixCoins\",\r\n    \"data_start\": \"2018-01-19\",\r\n    \"data_end\":
+        \"2018-06-22\",\r\n    \"data_quote_start\": \"2018-01-24T00:21:38.5122245Z\",\r\n
+        \   \"data_quote_end\": \"2018-06-22T14:09:41.2745570Z\",\r\n    \"data_orderbook_start\":
+        \"2018-01-24T00:21:38.5122245Z\",\r\n    \"data_orderbook_end\": \"2018-06-22T14:09:41.2745570Z\",\r\n
+        \   \"data_trade_start\": \"2018-01-19T02:29:23.0000000Z\",\r\n    \"data_trade_end\":
+        \"2018-06-22T14:09:28.0000000Z\",\r\n    \"data_trade_count\": 3917307,\r\n
+        \   \"data_symbols_count\": 6\r\n  },\r\n  {\r\n    \"exchange_id\": \"VIRWOX\",\r\n
+        \   \"website\": \"https://www.virwox.com/\",\r\n    \"name\": \"BirWoX\",\r\n
+        \   \"data_start\": \"2011-04-27\",\r\n    \"data_end\": \"2018-06-26\",\r\n
+        \   \"data_quote_start\": \"2017-03-14T20:04:16.0302851Z\",\r\n    \"data_quote_end\":
+        \"2018-06-26T22:42:22.2933506Z\",\r\n    \"data_orderbook_start\": \"2017-03-14T20:04:16.0302851Z\",\r\n
+        \   \"data_orderbook_end\": \"2018-06-26T22:42:22.2933506Z\",\r\n    \"data_trade_start\":
+        \"2011-04-27T16:05:09.0000000Z\",\r\n    \"data_trade_end\": \"2018-06-26T22:41:37.0000000Z\",\r\n
+        \   \"data_trade_count\": 3265482,\r\n    \"data_symbols_count\": 12\r\n  },\r\n
+        \ {\r\n    \"exchange_id\": \"BTER\",\r\n    \"website\": \"https://bter.com/\",\r\n
+        \   \"name\": \"Bter\",\r\n    \"data_start\": \"2017-01-08\",\r\n    \"data_end\":
+        \"2018-03-10\",\r\n    \"data_quote_start\": \"2017-01-08T23:59:43.3338614Z\",\r\n
+        \   \"data_quote_end\": \"2018-03-09T23:36:52.2702686Z\",\r\n    \"data_orderbook_start\":
+        \"2017-01-08T23:59:43.3338614Z\",\r\n    \"data_orderbook_end\": \"2018-03-09T23:36:52.2702686Z\",\r\n
+        \   \"data_trade_start\": \"2017-01-09T00:21:54.0000000Z\",\r\n    \"data_trade_end\":
+        \"2018-03-10T02:08:08.0000000Z\",\r\n    \"data_trade_count\": 3204349,\r\n
+        \   \"data_symbols_count\": 208\r\n  },\r\n  {\r\n    \"exchange_id\": \"MERCADOBITCOIN\",\r\n
+        \   \"website\": \"https://www.mercadobitcoin.com.br/\",\r\n    \"name\":
+        \"Mercado Bitcoin\",\r\n    \"data_start\": \"2017-03-07\",\r\n    \"data_end\":
+        \"2018-06-26\",\r\n    \"data_quote_start\": \"2017-03-14T20:05:05.6101304Z\",\r\n
+        \   \"data_quote_end\": \"2018-06-26T22:42:18.3134515Z\",\r\n    \"data_orderbook_start\":
+        \"2017-03-14T20:05:05.6101304Z\",\r\n    \"data_orderbook_end\": \"2018-06-26T22:42:18.3134515Z\",\r\n
+        \   \"data_trade_start\": \"2017-03-07T18:04:01.0000000Z\",\r\n    \"data_trade_end\":
+        \"2018-06-26T22:41:00.0000000Z\",\r\n    \"data_trade_count\": 2968942,\r\n
+        \   \"data_symbols_count\": 2\r\n  },\r\n  {\r\n    \"exchange_id\": \"COINNEST\",\r\n
+        \   \"website\": \"https://www.coinnest.co.kr/\",\r\n    \"name\": \"Coinnest\",\r\n
+        \   \"data_start\": \"2017-12-17\",\r\n    \"data_end\": \"2018-06-26\",\r\n
+        \   \"data_quote_start\": \"2017-12-18T21:44:18.7514464Z\",\r\n    \"data_quote_end\":
+        \"2018-06-26T22:44:47.9306733Z\",\r\n    \"data_orderbook_start\": \"2017-12-18T21:44:18.7514464Z\",\r\n
+        \   \"data_orderbook_end\": \"2018-06-26T22:44:47.9306733Z\",\r\n    \"data_trade_start\":
+        \"2017-12-17T09:56:31.0000000Z\",\r\n    \"data_trade_end\": \"2018-06-26T22:42:39.0000000Z\",\r\n
+        \   \"data_trade_count\": 2924753,\r\n    \"data_symbols_count\": 22\r\n  },\r\n
+        \ {\r\n    \"exchange_id\": \"CEXIO\",\r\n    \"website\": \"https://cex.io/\",\r\n
+        \   \"name\": \"CEX.IO\",\r\n    \"data_start\": \"2018-01-15\",\r\n    \"data_end\":
+        \"2018-06-26\",\r\n    \"data_quote_start\": \"2018-01-24T00:21:46.8349102Z\",\r\n
+        \   \"data_quote_end\": \"2018-06-26T22:46:20.4458249Z\",\r\n    \"data_orderbook_start\":
+        \"2018-01-24T00:21:46.8349102Z\",\r\n    \"data_orderbook_end\": \"2018-06-26T22:46:20.4458249Z\",\r\n
+        \   \"data_trade_start\": \"2018-01-15T19:18:49.0000000Z\",\r\n    \"data_trade_end\":
+        \"2018-06-26T22:44:41.0000000Z\",\r\n    \"data_trade_count\": 2880253,\r\n
+        \   \"data_symbols_count\": 30\r\n  },\r\n  {\r\n    \"exchange_id\": \"THEROCKTRADING\",\r\n
+        \   \"website\": \"https://www.therocktrading.com/\",\r\n    \"name\": \"The
+        Rock Trading LTD.\",\r\n    \"data_start\": \"2011-11-09\",\r\n    \"data_end\":
+        \"2018-06-26\",\r\n    \"data_quote_start\": \"2017-03-14T20:05:17.8425642Z\",\r\n
+        \   \"data_quote_end\": \"2018-06-26T22:47:03.1376153Z\",\r\n    \"data_orderbook_start\":
+        \"2017-03-14T20:05:17.8425642Z\",\r\n    \"data_orderbook_end\": \"2018-06-26T22:47:03.1376153Z\",\r\n
+        \   \"data_trade_start\": \"2011-11-09T14:33:28.0000000Z\",\r\n    \"data_trade_end\":
+        \"2018-06-26T22:41:16.0000000Z\",\r\n    \"data_trade_count\": 2665173,\r\n
+        \   \"data_symbols_count\": 26\r\n  },\r\n  {\r\n    \"exchange_id\": \"DERIBIT\",\r\n
+        \   \"website\": \"https://www.deribit.com/\",\r\n    \"name\": \"Deribit\",\r\n
+        \   \"data_start\": \"2016-12-02\",\r\n    \"data_end\": \"2018-06-26\",\r\n
+        \   \"data_quote_start\": \"2017-03-14T20:03:37.1002962Z\",\r\n    \"data_quote_end\":
+        \"2018-06-26T22:47:30.3212691Z\",\r\n    \"data_orderbook_start\": \"2017-03-14T20:03:37.1002962Z\",\r\n
+        \   \"data_orderbook_end\": \"2018-06-26T22:47:30.3212691Z\",\r\n    \"data_trade_start\":
+        \"2016-12-02T05:15:13.4340000Z\",\r\n    \"data_trade_end\": \"2018-06-26T22:44:42.8750000Z\",\r\n
+        \   \"data_trade_count\": 2516791,\r\n    \"data_symbols_count\": 2338\r\n
+        \ },\r\n  {\r\n    \"exchange_id\": \"CCEX\",\r\n    \"website\": \"https://c-cex.com\",\r\n
+        \   \"name\": \"c-cex\",\r\n    \"data_start\": \"2014-02-11\",\r\n    \"data_end\":
+        \"2018-06-26\",\r\n    \"data_quote_start\": \"2017-03-14T20:03:12.2346102Z\",\r\n
+        \   \"data_quote_end\": \"2018-06-26T22:46:46.9299714Z\",\r\n    \"data_orderbook_start\":
+        \"2017-03-14T20:03:12.2346102Z\",\r\n    \"data_orderbook_end\": \"2018-06-26T22:46:46.9299714Z\",\r\n
+        \   \"data_trade_start\": \"2014-02-11T19:40:58.0000000Z\",\r\n    \"data_trade_end\":
+        \"2018-06-26T22:43:36.0000000Z\",\r\n    \"data_trade_count\": 2479513,\r\n
+        \   \"data_symbols_count\": 1413\r\n  },\r\n  {\r\n    \"exchange_id\": \"QRYPTOS\",\r\n
+        \   \"website\": \"https://www.qryptos.com/\",\r\n    \"name\": \"QRYPTOS\",\r\n
+        \   \"data_start\": \"2018-01-04\",\r\n    \"data_end\": \"2018-06-26\",\r\n
+        \   \"data_quote_start\": \"2018-01-24T00:21:42.1453690Z\",\r\n    \"data_quote_end\":
+        \"2018-06-26T22:46:53.8730000Z\",\r\n    \"data_orderbook_start\": \"2018-01-24T00:21:42.1453690Z\",\r\n
+        \   \"data_orderbook_end\": \"2018-06-26T22:46:53.8730000Z\",\r\n    \"data_trade_start\":
+        \"2018-01-04T16:50:48.0000000Z\",\r\n    \"data_trade_end\": \"2018-06-26T22:46:47.0000000Z\",\r\n
+        \   \"data_trade_count\": 2271835,\r\n    \"data_symbols_count\": 213\r\n
+        \ },\r\n  {\r\n    \"exchange_id\": \"QUADRIGACX\",\r\n    \"website\": \"https://www.quadrigacx.com/\",\r\n
+        \   \"name\": \"QuadrigaCX\",\r\n    \"data_start\": \"2017-03-14\",\r\n    \"data_end\":
+        \"2018-06-26\",\r\n    \"data_quote_start\": \"2017-03-14T20:05:08.1246185Z\",\r\n
+        \   \"data_quote_end\": \"2018-06-26T22:42:16.2858411Z\",\r\n    \"data_orderbook_start\":
+        \"2017-03-14T20:05:08.1246185Z\",\r\n    \"data_orderbook_end\": \"2018-06-26T22:42:16.2858411Z\",\r\n
+        \   \"data_trade_start\": \"2017-03-14T20:10:31.0000000Z\",\r\n    \"data_trade_end\":
+        \"2018-06-26T22:40:58.0000000Z\",\r\n    \"data_trade_count\": 1990528,\r\n
+        \   \"data_symbols_count\": 4\r\n  },\r\n  {\r\n    \"exchange_id\": \"BITMARKET\",\r\n
+        \   \"website\": \"https://www.bitmarket.pl\",\r\n    \"name\": \"BitMarket\",\r\n
+        \   \"data_start\": \"2011-04-05\",\r\n    \"data_end\": \"2018-06-26\",\r\n
+        \   \"data_quote_start\": \"2017-08-29T15:47:10.0528025Z\",\r\n    \"data_quote_end\":
+        \"2018-06-26T22:43:41.1601183Z\",\r\n    \"data_orderbook_start\": \"2017-08-29T15:47:10.0528025Z\",\r\n
+        \   \"data_orderbook_end\": \"2018-06-26T22:43:41.1601183Z\",\r\n    \"data_trade_start\":
+        \"2011-04-05T18:49:48.0000000Z\",\r\n    \"data_trade_end\": \"2018-06-26T22:40:02.0000000Z\",\r\n
+        \   \"data_trade_count\": 1933936,\r\n    \"data_symbols_count\": 4\r\n  },\r\n
+        \ {\r\n    \"exchange_id\": \"LUNO\",\r\n    \"website\": \"https://www.luno.com\",\r\n
+        \   \"name\": \"Luno\",\r\n    \"data_start\": \"2017-12-28\",\r\n    \"data_end\":
+        \"2018-06-26\",\r\n    \"data_quote_start\": \"2017-12-28T21:44:47.2651267Z\",\r\n
+        \   \"data_quote_end\": \"2018-06-26T22:44:17.5056980Z\",\r\n    \"data_orderbook_start\":
+        \"2017-12-28T21:44:47.2651267Z\",\r\n    \"data_orderbook_end\": \"2018-06-26T22:44:17.5056980Z\",\r\n
+        \   \"data_trade_start\": \"2017-12-28T14:19:44.8820000Z\",\r\n    \"data_trade_end\":
+        \"2018-06-26T22:43:14.7050000Z\",\r\n    \"data_trade_count\": 1815744,\r\n
+        \   \"data_symbols_count\": 4\r\n  },\r\n  {\r\n    \"exchange_id\": \"BTCMARKETS\",\r\n
+        \   \"website\": \"https://www.btcmarkets.net/\",\r\n    \"name\": \"BTC Markets
+        Pty Ltd.\",\r\n    \"data_start\": \"2017-12-25\",\r\n    \"data_end\": \"2018-06-26\",\r\n
+        \   \"data_quote_start\": \"2017-12-28T21:38:26.3015015Z\",\r\n    \"data_quote_end\":
+        \"2018-06-26T22:44:51.9897537Z\",\r\n    \"data_orderbook_start\": \"2017-12-28T21:38:26.3015015Z\",\r\n
+        \   \"data_orderbook_end\": \"2018-06-26T22:44:51.9897537Z\",\r\n    \"data_trade_start\":
+        \"2017-12-25T10:18:54.0000000Z\",\r\n    \"data_trade_end\": \"2018-06-26T22:43:13.0000000Z\",\r\n
+        \   \"data_trade_count\": 1725574,\r\n    \"data_symbols_count\": 11\r\n  },\r\n
+        \ {\r\n    \"exchange_id\": \"BTCBOX\",\r\n    \"website\": \"https://www.btcbox.co.jp/\",\r\n
+        \   \"name\": \"BtcBox\",\r\n    \"data_start\": \"2018-01-24\",\r\n    \"data_end\":
+        \"2018-06-26\",\r\n    \"data_quote_start\": \"2018-01-24T00:21:41.0728293Z\",\r\n
+        \   \"data_quote_end\": \"2018-06-26T22:44:38.5278537Z\",\r\n    \"data_orderbook_start\":
+        \"2018-01-24T00:21:41.0728293Z\",\r\n    \"data_orderbook_end\": \"2018-06-26T22:44:38.5278537Z\",\r\n
+        \   \"data_trade_start\": \"2018-01-24T23:24:33.0000000Z\",\r\n    \"data_trade_end\":
+        \"2018-06-26T22:45:05.0000000Z\",\r\n    \"data_trade_count\": 1341300,\r\n
+        \   \"data_symbols_count\": 1\r\n  },\r\n  {\r\n    \"exchange_id\": \"GATECOIN\",\r\n
+        \   \"website\": \"https://gatecoin.com/\",\r\n    \"name\": \"Gatecoin\",\r\n
+        \   \"data_start\": \"2017-03-14\",\r\n    \"data_end\": \"2018-06-26\",\r\n
+        \   \"data_quote_start\": \"2017-03-14T20:04:17.4937751Z\",\r\n    \"data_quote_end\":
+        \"2018-06-26T22:42:19.9516118Z\",\r\n    \"data_orderbook_start\": \"2017-03-14T20:04:17.4937751Z\",\r\n
+        \   \"data_orderbook_end\": \"2018-06-26T22:42:19.9516118Z\",\r\n    \"data_trade_start\":
+        \"2017-03-14T22:00:23.0000000Z\",\r\n    \"data_trade_end\": \"2018-06-26T22:14:12.0000000Z\",\r\n
+        \   \"data_trade_count\": 1322369,\r\n    \"data_symbols_count\": 10\r\n  },\r\n
+        \ {\r\n    \"exchange_id\": \"ALLCOIN\",\r\n    \"website\": \"https://www.allcoin.com/\",\r\n
+        \   \"name\": \"Allcoin\",\r\n    \"data_start\": \"2017-06-19\",\r\n    \"data_end\":
+        \"2018-04-19\",\r\n    \"data_quote_start\": \"2018-01-24T00:42:37.0818542Z\",\r\n
+        \   \"data_quote_end\": \"2018-04-19T11:38:23.3076990Z\",\r\n    \"data_orderbook_start\":
+        \"2018-01-24T00:42:37.0818542Z\",\r\n    \"data_orderbook_end\": \"2018-04-19T11:38:23.3076990Z\",\r\n
+        \   \"data_trade_start\": \"2017-06-19T05:31:08.2600000Z\",\r\n    \"data_trade_end\":
+        \"2018-04-19T11:36:46.4120000Z\",\r\n    \"data_trade_count\": 1068040,\r\n
+        \   \"data_symbols_count\": 72\r\n  },\r\n  {\r\n    \"exchange_id\": \"BXINTH\",\r\n
+        \   \"website\": \"https://bx.in.th/\",\r\n    \"name\": \"bx.in.th\",\r\n
+        \   \"data_start\": \"2015-06-26\",\r\n    \"data_end\": \"2018-06-27\",\r\n
+        \   \"data_quote_start\": \"2017-03-18T22:53:45.5791610Z\",\r\n    \"data_quote_end\":
+        \"2018-06-26T22:45:45.6576071Z\",\r\n    \"data_orderbook_start\": \"2017-03-18T22:53:45.5791610Z\",\r\n
+        \   \"data_orderbook_end\": \"2018-06-26T22:45:45.6576071Z\",\r\n    \"data_trade_start\":
+        \"2015-06-26T11:19:16.0000000Z\",\r\n    \"data_trade_end\": \"2018-06-27T05:44:37.0000000Z\",\r\n
+        \   \"data_trade_count\": 1061106,\r\n    \"data_symbols_count\": 28\r\n  },\r\n
+        \ {\r\n    \"exchange_id\": \"COINMATE\",\r\n    \"website\": \"https://coinmate.io/\",\r\n
+        \   \"name\": \"Coin Mate\",\r\n    \"data_start\": \"2017-03-14\",\r\n    \"data_end\":
+        \"2018-06-26\",\r\n    \"data_quote_start\": \"2017-03-14T20:04:13.3389084Z\",\r\n
+        \   \"data_quote_end\": \"2018-06-26T22:41:39.9457248Z\",\r\n    \"data_orderbook_start\":
+        \"2017-03-14T20:04:13.3389084Z\",\r\n    \"data_orderbook_end\": \"2018-06-26T22:41:39.9457248Z\",\r\n
+        \   \"data_trade_start\": \"2017-03-14T20:04:43.2020000Z\",\r\n    \"data_trade_end\":
+        \"2018-06-26T22:36:11.0960000Z\",\r\n    \"data_trade_count\": 784940,\r\n
+        \   \"data_symbols_count\": 2\r\n  },\r\n  {\r\n    \"exchange_id\": \"BTCTURK\",\r\n
+        \   \"website\": \"https://www.btcturk.com/\",\r\n    \"name\": \"BTCTurk\",\r\n
+        \   \"data_start\": \"2017-10-08\",\r\n    \"data_end\": \"2018-06-26\",\r\n
+        \   \"data_quote_start\": \"2017-12-24T13:03:38.2179565Z\",\r\n    \"data_quote_end\":
+        \"2018-06-26T22:44:41.6348434Z\",\r\n    \"data_orderbook_start\": \"2017-12-24T13:03:38.2179565Z\",\r\n
+        \   \"data_orderbook_end\": \"2018-06-26T22:44:41.6348434Z\",\r\n    \"data_trade_start\":
+        \"2017-10-08T01:12:04.0000000Z\",\r\n    \"data_trade_end\": \"2018-06-26T22:40:59.0000000Z\",\r\n
+        \   \"data_trade_count\": 652089,\r\n    \"data_symbols_count\": 4\r\n  },\r\n
+        \ {\r\n    \"exchange_id\": \"INDEPENDENTRESERVE\",\r\n    \"website\": \"https://www.independentreserve.com/\",\r\n
+        \   \"name\": \"Independent Reserve\",\r\n    \"data_start\": \"2017-09-16\",\r\n
+        \   \"data_end\": \"2018-06-26\",\r\n    \"data_quote_start\": \"2017-09-21T13:39:33.4870179Z\",\r\n
+        \   \"data_quote_end\": \"2018-06-26T22:46:38.8438613Z\",\r\n    \"data_orderbook_start\":
+        \"2017-09-21T13:39:33.4870179Z\",\r\n    \"data_orderbook_end\": \"2018-06-26T22:46:38.8438613Z\",\r\n
+        \   \"data_trade_start\": \"2017-09-16T00:53:48.0000000Z\",\r\n    \"data_trade_end\":
+        \"2018-06-26T22:27:21.0000000Z\",\r\n    \"data_trade_count\": 643603,\r\n
+        \   \"data_symbols_count\": 15\r\n  },\r\n  {\r\n    \"exchange_id\": \"COINFLOOR\",\r\n
+        \   \"website\": \"https://www.coinfloor.co.uk/\",\r\n    \"name\": \"coinfloor\",\r\n
+        \   \"data_start\": \"2017-09-19\",\r\n    \"data_end\": \"2018-06-26\",\r\n
+        \   \"data_quote_start\": \"2017-09-21T13:36:24.9479094Z\",\r\n    \"data_quote_end\":
+        \"2018-06-26T22:43:33.1127347Z\",\r\n    \"data_orderbook_start\": \"2017-09-21T13:36:24.9479094Z\",\r\n
+        \   \"data_orderbook_end\": \"2018-06-26T22:43:33.1127347Z\",\r\n    \"data_trade_start\":
+        \"2017-09-19T11:20:44.0000000Z\",\r\n    \"data_trade_end\": \"2018-06-26T22:43:01.0000000Z\",\r\n
+        \   \"data_trade_count\": 539189,\r\n    \"data_symbols_count\": 4\r\n  },\r\n
+        \ {\r\n    \"exchange_id\": \"DSX\",\r\n    \"website\": \"https://dsx.uk\",\r\n
+        \   \"name\": \"DSX\",\r\n    \"data_start\": \"2017-06-07\",\r\n    \"data_end\":
+        \"2018-06-26\",\r\n    \"data_quote_start\": \"2017-08-29T15:50:33.5497414Z\",\r\n
+        \   \"data_quote_end\": \"2018-06-26T22:44:03.3640076Z\",\r\n    \"data_orderbook_start\":
+        \"2017-08-29T15:50:33.5497414Z\",\r\n    \"data_orderbook_end\": \"2018-06-26T22:44:03.3640076Z\",\r\n
+        \   \"data_trade_start\": \"2017-06-07T04:46:35.0000000Z\",\r\n    \"data_trade_end\":
+        \"2018-06-26T22:41:59.0000000Z\",\r\n    \"data_trade_count\": 514962,\r\n
+        \   \"data_symbols_count\": 28\r\n  },\r\n  {\r\n    \"exchange_id\": \"ABUCOINS\",\r\n
+        \   \"website\": \"https://abucoins.com/\",\r\n    \"name\": \"Abucoins\",\r\n
+        \   \"data_start\": \"2017-12-27\",\r\n    \"data_end\": \"2018-06-24\",\r\n
+        \   \"data_quote_start\": \"2017-12-28T21:34:28.8285993Z\",\r\n    \"data_quote_end\":
+        \"2018-06-24T23:32:29.7556021Z\",\r\n    \"data_orderbook_start\": \"2017-12-28T21:34:28.8285993Z\",\r\n
+        \   \"data_orderbook_end\": \"2018-06-24T23:32:29.7556021Z\",\r\n    \"data_trade_start\":
+        \"2017-12-27T12:49:47.0000000Z\",\r\n    \"data_trade_end\": \"2018-05-30T13:35:15.0000000Z\",\r\n
+        \   \"data_trade_count\": 470161,\r\n    \"data_symbols_count\": 66\r\n  },\r\n
+        \ {\r\n    \"exchange_id\": \"SOUTHXCHANGE\",\r\n    \"website\": \"https://www.southxchange.com/\",\r\n
+        \   \"name\": \"SouthXchange\",\r\n    \"data_start\": \"2017-11-16\",\r\n
+        \   \"data_end\": \"2018-06-26\",\r\n    \"data_quote_start\": \"2018-01-24T00:21:32.6002443Z\",\r\n
+        \   \"data_quote_end\": \"2018-06-26T22:46:29.5174150Z\",\r\n    \"data_orderbook_start\":
+        \"2018-01-24T00:21:32.6002443Z\",\r\n    \"data_orderbook_end\": \"2018-06-26T22:46:29.5174150Z\",\r\n
+        \   \"data_trade_start\": \"2017-11-16T09:22:21.0000000Z\",\r\n    \"data_trade_end\":
+        \"2018-06-26T22:43:15.0000000Z\",\r\n    \"data_trade_count\": 459828,\r\n
+        \   \"data_symbols_count\": 347\r\n  },\r\n  {\r\n    \"exchange_id\": \"BTCTRADEUA\",\r\n
+        \   \"website\": \"https://btc-trade.com.ua/\",\r\n    \"name\": \"BTC Trade
+        UA\",\r\n    \"data_start\": \"2018-01-24\",\r\n    \"data_end\": \"2018-06-26\",\r\n
+        \   \"data_quote_start\": \"2018-01-24T00:21:29.5498424Z\",\r\n    \"data_quote_end\":
+        \"2018-06-26T22:45:09.5190000Z\",\r\n    \"data_orderbook_start\": \"2018-01-24T00:21:29.5498424Z\",\r\n
+        \   \"data_orderbook_end\": \"2018-06-26T22:45:09.5190000Z\",\r\n    \"data_trade_start\":
+        \"2018-01-24T18:46:55.0000000Z\",\r\n    \"data_trade_end\": \"2018-06-26T22:43:51.0000000Z\",\r\n
+        \   \"data_trade_count\": 296644,\r\n    \"data_symbols_count\": 17\r\n  },\r\n
+        \ {\r\n    \"exchange_id\": \"BTCX\",\r\n    \"website\": \"https://bt.cx/en/\",\r\n
+        \   \"name\": \"bt.cx\",\r\n    \"data_start\": \"2016-03-27\",\r\n    \"data_end\":
+        \"2017-10-13\",\r\n    \"data_quote_start\": \"2017-03-14T20:03:53.7061506Z\",\r\n
+        \   \"data_quote_end\": \"2017-10-13T11:04:34.3376757Z\",\r\n    \"data_orderbook_start\":
+        \"2017-03-14T20:03:53.7061506Z\",\r\n    \"data_orderbook_end\": \"2017-10-13T11:04:34.3376757Z\",\r\n
+        \   \"data_trade_start\": \"2016-03-27T23:17:37.0000000Z\",\r\n    \"data_trade_end\":
+        \"2017-10-13T10:45:09.0000000Z\",\r\n    \"data_trade_count\": 204837,\r\n
+        \   \"data_symbols_count\": 2\r\n  },\r\n  {\r\n    \"exchange_id\": \"KUNA\",\r\n
+        \   \"website\": \"https://kuna.io/\",\r\n    \"name\": \"Kuna\",\r\n    \"data_start\":
+        \"2017-12-30\",\r\n    \"data_end\": \"2018-06-27\",\r\n    \"data_quote_start\":
+        \"2018-01-24T00:21:49.7672137Z\",\r\n    \"data_quote_end\": \"2018-06-26T22:45:22.7520000Z\",\r\n
+        \   \"data_orderbook_start\": \"2018-01-24T00:21:49.7672137Z\",\r\n    \"data_orderbook_end\":
+        \"2018-06-26T22:45:22.7520000Z\",\r\n    \"data_trade_start\": \"2017-12-30T06:24:58.0000000Z\",\r\n
+        \   \"data_trade_end\": \"2018-06-27T04:35:41.0000000Z\",\r\n    \"data_trade_count\":
+        177165,\r\n    \"data_symbols_count\": 13\r\n  },\r\n  {\r\n    \"exchange_id\":
+        \"BRAZILIEX\",\r\n    \"website\": \"https://braziliex.com/\",\r\n    \"name\":
+        \"Braziliex\",\r\n    \"data_start\": \"2017-12-16\",\r\n    \"data_end\":
+        \"2018-06-26\",\r\n    \"data_quote_start\": \"2018-01-24T00:21:43.7267644Z\",\r\n
+        \   \"data_quote_end\": \"2018-06-26T22:47:02.5060000Z\",\r\n    \"data_orderbook_start\":
+        \"2018-01-24T00:21:43.7267644Z\",\r\n    \"data_orderbook_end\": \"2018-06-26T22:47:02.5060000Z\",\r\n
+        \   \"data_trade_start\": \"2017-12-16T15:03:35.6420000Z\",\r\n    \"data_trade_end\":
+        \"2018-06-26T22:40:56.6000000Z\",\r\n    \"data_trade_count\": 107234,\r\n
+        \   \"data_symbols_count\": 89\r\n  },\r\n  {\r\n    \"exchange_id\": \"BIT2C\",\r\n
+        \   \"website\": \"https://www.bit2c.co.il/\",\r\n    \"name\": \"Bit2C\",\r\n
+        \   \"data_start\": \"2013-03-15\",\r\n    \"data_end\": \"2018-06-26\",\r\n
+        \   \"data_quote_start\": \"2018-01-24T00:42:50.1443495Z\",\r\n    \"data_quote_end\":
+        \"2018-06-26T22:45:21.8540000Z\",\r\n    \"data_orderbook_start\": \"2018-01-24T00:42:50.1443495Z\",\r\n
+        \   \"data_orderbook_end\": \"2018-06-26T22:45:21.8540000Z\",\r\n    \"data_trade_start\":
+        \"2013-03-15T12:48:43.0000000Z\",\r\n    \"data_trade_end\": \"2018-06-26T18:59:20.0000000Z\",\r\n
+        \   \"data_trade_count\": 95831,\r\n    \"data_symbols_count\": 4\r\n  },\r\n
+        \ {\r\n    \"exchange_id\": \"FYBSG\",\r\n    \"website\": \"https://www.fybsg.com/\",\r\n
+        \   \"name\": \"FYB-SG\",\r\n    \"data_start\": \"2013-01-07\",\r\n    \"data_end\":
+        \"2018-06-26\",\r\n    \"data_quote_start\": \"2018-01-24T00:21:35.8644461Z\",\r\n
+        \   \"data_quote_end\": \"2018-06-26T22:45:01.9200000Z\",\r\n    \"data_orderbook_start\":
+        \"2018-01-24T00:21:35.8644461Z\",\r\n    \"data_orderbook_end\": \"2018-06-26T22:45:01.9200000Z\",\r\n
+        \   \"data_trade_start\": \"2013-01-07T06:17:04.0000000Z\",\r\n    \"data_trade_end\":
+        \"2018-02-27T04:44:43.0000000Z\",\r\n    \"data_trade_count\": 93930,\r\n
+        \   \"data_symbols_count\": 2\r\n  },\r\n  {\r\n    \"exchange_id\": \"YUNBI\",\r\n
+        \   \"website\": \"https://yunbi.com/\",\r\n    \"name\": \"YUNBI\",\r\n    \"data_start\":
+        \"2013-09-28\",\r\n    \"data_end\": \"2018-03-09\",\r\n    \"data_quote_start\":
+        \"2017-03-14T20:04:56.4842821Z\",\r\n    \"data_quote_end\": \"2018-03-09T23:30:06.7432183Z\",\r\n
+        \   \"data_orderbook_start\": \"2017-03-14T20:04:56.4842821Z\",\r\n    \"data_orderbook_end\":
+        \"2018-03-09T23:30:06.7432183Z\",\r\n    \"data_trade_start\": \"2013-09-28T22:40:50.0000000Z\",\r\n
+        \   \"data_trade_end\": \"2018-03-09T21:58:11.8750000Z\",\r\n    \"data_trade_count\":
+        82159,\r\n    \"data_symbols_count\": 23\r\n  },\r\n  {\r\n    \"exchange_id\":
+        \"BITKONAN\",\r\n    \"website\": \"https://bitkonan.com/\",\r\n    \"name\":
+        \"BitKonan\",\r\n    \"data_start\": \"2017-08-26\",\r\n    \"data_end\":
+        \"2018-06-26\",\r\n    \"data_quote_start\": \"2017-08-29T15:47:11.5174742Z\",\r\n
+        \   \"data_quote_end\": \"2018-06-26T22:41:59.2592361Z\",\r\n    \"data_orderbook_start\":
+        \"2017-08-29T15:47:11.5174742Z\",\r\n    \"data_orderbook_end\": \"2018-06-26T22:41:59.2592361Z\",\r\n
+        \   \"data_trade_start\": \"2017-08-26T12:22:43.0000000Z\",\r\n    \"data_trade_end\":
+        \"2018-06-26T21:54:57.0000000Z\",\r\n    \"data_trade_count\": 57871,\r\n
+        \   \"data_symbols_count\": 2\r\n  },\r\n  {\r\n    \"exchange_id\": \"FYBSE\",\r\n
+        \   \"website\": \"https://www.fybse.se/\",\r\n    \"name\": \"FYB-SE\",\r\n
+        \   \"data_start\": \"2013-07-15\",\r\n    \"data_end\": \"2018-06-26\",\r\n
+        \   \"data_quote_start\": \"2018-01-24T00:21:52.7701638Z\",\r\n    \"data_quote_end\":
+        \"2018-06-26T22:44:58.9100000Z\",\r\n    \"data_orderbook_start\": \"2018-01-24T00:21:52.7701638Z\",\r\n
+        \   \"data_orderbook_end\": \"2018-06-26T22:44:58.9100000Z\",\r\n    \"data_trade_start\":
+        \"2013-07-15T20:40:11.0000000Z\",\r\n    \"data_trade_end\": \"2018-02-26T14:50:15.0000000Z\",\r\n
+        \   \"data_trade_count\": 21655,\r\n    \"data_symbols_count\": 1\r\n  },\r\n
+        \ {\r\n    \"exchange_id\": \"BTCC\",\r\n    \"website\": \"https://www.btcc.com/\",\r\n
+        \   \"name\": \"BTCC\",\r\n    \"data_start\": \"2017-09-20\",\r\n    \"data_end\":
+        \"2018-06-19\",\r\n    \"data_quote_start\": \"2017-09-21T13:35:08.7798904Z\",\r\n
+        \   \"data_quote_end\": \"2018-06-19T12:33:14.6691507Z\",\r\n    \"data_orderbook_start\":
+        \"2017-09-21T13:35:08.7798904Z\",\r\n    \"data_orderbook_end\": \"2018-06-19T12:33:14.6691507Z\",\r\n
+        \   \"data_trade_start\": \"2017-09-20T12:51:00.5840000Z\",\r\n    \"data_trade_end\":
+        \"2018-06-11T01:06:48.2510000Z\",\r\n    \"data_trade_count\": 18792,\r\n
+        \   \"data_symbols_count\": 1\r\n  },\r\n  {\r\n    \"exchange_id\": \"COINGI\",\r\n
+        \   \"website\": \"https://coingi.com/\",\r\n    \"name\": \"Coingi\",\r\n
+        \   \"data_start\": \"2017-09-10\",\r\n    \"data_end\": \"2018-06-26\",\r\n
+        \   \"data_quote_start\": \"2018-01-24T00:21:48.4137019Z\",\r\n    \"data_quote_end\":
+        \"2018-06-26T22:45:13.7160000Z\",\r\n    \"data_orderbook_start\": \"2018-01-24T00:21:48.4137019Z\",\r\n
+        \   \"data_orderbook_end\": \"2018-06-26T22:45:13.7160000Z\",\r\n    \"data_trade_start\":
+        \"2017-09-10T07:59:21.0000000Z\",\r\n    \"data_trade_end\": \"2018-06-26T22:15:43.0000000Z\",\r\n
+        \   \"data_trade_count\": 17988,\r\n    \"data_symbols_count\": 14\r\n  },\r\n
+        \ {\r\n    \"exchange_id\": \"1BTCXE\",\r\n    \"website\": \"https://1btcxe.com/\",\r\n
+        \   \"name\": \"1Btcxe\",\r\n    \"data_start\": \"2018-01-23\",\r\n    \"data_end\":
+        \"2018-06-24\",\r\n    \"data_quote_start\": \"2018-01-24T00:42:37.6443449Z\",\r\n
+        \   \"data_quote_end\": \"2018-06-24T23:33:02.4280000Z\",\r\n    \"data_orderbook_start\":
+        \"2018-01-24T00:42:37.6443449Z\",\r\n    \"data_orderbook_end\": \"2018-06-24T23:33:02.4280000Z\",\r\n
+        \   \"data_trade_start\": \"2018-01-23T09:58:13.0000000Z\",\r\n    \"data_trade_end\":
+        \"2018-06-18T12:01:54.0000000Z\",\r\n    \"data_trade_count\": 16230,\r\n
+        \   \"data_symbols_count\": 29\r\n  },\r\n  {\r\n    \"exchange_id\": \"NOVA\",\r\n
+        \   \"website\": \"https://novaexchange.com/\",\r\n    \"name\": \"Novaexchange\",\r\n
+        \   \"data_start\": \"2017-01-14\",\r\n    \"data_end\": \"2018-06-26\",\r\n
+        \   \"data_quote_start\": \"2018-01-24T00:21:54.1944779Z\",\r\n    \"data_quote_end\":
+        \"2018-06-26T21:33:26.5510252Z\",\r\n    \"data_orderbook_start\": \"2018-01-24T00:21:54.1944779Z\",\r\n
+        \   \"data_orderbook_end\": \"2018-06-26T21:33:26.5510252Z\",\r\n    \"data_trade_start\":
+        \"2017-01-14T17:43:31.0000000Z\",\r\n    \"data_trade_end\": \"2018-06-26T21:33:02.0000000Z\",\r\n
+        \   \"data_trade_count\": 16205,\r\n    \"data_symbols_count\": 162\r\n  },\r\n
+        \ {\r\n    \"exchange_id\": \"BITLISH\",\r\n    \"website\": \"https://bitlish.com/\",\r\n
+        \   \"name\": \"Bitlish\",\r\n    \"data_start\": \"2017-10-12\",\r\n    \"data_end\":
+        \"2018-06-26\",\r\n    \"data_quote_start\": \"2018-01-24T00:21:31.1076466Z\",\r\n
+        \   \"data_quote_end\": \"2018-06-26T22:46:10.3278497Z\",\r\n    \"data_orderbook_start\":
+        \"2018-01-24T00:21:31.1076466Z\",\r\n    \"data_orderbook_end\": \"2018-06-26T22:46:10.3278497Z\",\r\n
+        \   \"data_trade_start\": \"2017-10-12T18:00:10.7250000Z\",\r\n    \"data_trade_end\":
+        \"2018-06-26T22:43:54.9820000Z\",\r\n    \"data_trade_count\": 12554,\r\n
+        \   \"data_symbols_count\": 33\r\n  },\r\n  {\r\n    \"exchange_id\": \"COINSECURE\",\r\n
+        \   \"website\": \"https://coinsecure.in/\",\r\n    \"name\": \"Coinsecure\",\r\n
+        \   \"data_start\": \"2018-01-24\",\r\n    \"data_end\": \"2018-04-10\",\r\n
+        \   \"data_quote_start\": \"2018-01-24T00:21:45.2925018Z\",\r\n    \"data_quote_end\":
+        \"2018-04-10T05:55:15.8720000Z\",\r\n    \"data_orderbook_start\": \"2018-01-24T00:21:45.2925018Z\",\r\n
+        \   \"data_orderbook_end\": \"2018-04-10T05:55:15.8720000Z\",\r\n    \"data_trade_start\":
+        \"2018-01-24T18:15:31.9200000Z\",\r\n    \"data_trade_end\": \"2018-04-10T03:54:07.4020000Z\",\r\n
+        \   \"data_trade_count\": 9861,\r\n    \"data_symbols_count\": 1\r\n  },\r\n
+        \ {\r\n    \"exchange_id\": \"BITBAY\",\r\n    \"website\": \"https://www.bitbay.net/\",\r\n
+        \   \"name\": \"BitBay\",\r\n    \"data_start\": \"2014-03-29\",\r\n    \"data_end\":
+        \"2018-06-26\",\r\n    \"data_quote_start\": \"2017-08-29T15:47:11.6744609Z\",\r\n
+        \   \"data_quote_end\": \"2018-06-26T22:46:38.8360771Z\",\r\n    \"data_orderbook_start\":
+        \"2017-08-29T15:47:11.6744609Z\",\r\n    \"data_orderbook_end\": \"2018-06-26T22:46:38.8360771Z\",\r\n
+        \   \"data_trade_start\": \"2014-03-29T12:09:48.0000000Z\",\r\n    \"data_trade_end\":
+        \"2018-06-26T15:48:06.0000000Z\",\r\n    \"data_trade_count\": 2249,\r\n    \"data_symbols_count\":
+        51\r\n  },\r\n  {\r\n    \"exchange_id\": \"VBTC\",\r\n    \"website\": \"https://vbtc.vn/\",\r\n
+        \   \"name\": \"VBTC.VN\",\r\n    \"data_start\": \"2015-09-09\",\r\n    \"data_end\":
+        \"2018-06-26\",\r\n    \"data_quote_start\": \"2017-03-14T20:05:05.6371921Z\",\r\n
+        \   \"data_quote_end\": \"2018-06-26T22:42:21.4289826Z\",\r\n    \"data_orderbook_start\":
+        \"2017-03-14T20:05:05.6371921Z\",\r\n    \"data_orderbook_end\": \"2018-06-26T22:42:21.4289826Z\",\r\n
+        \   \"data_trade_start\": \"2015-09-09T03:09:55.0000000Z\",\r\n    \"data_trade_end\":
+        \"2015-11-23T06:07:39.0000000Z\",\r\n    \"data_trade_count\": 500,\r\n    \"data_symbols_count\":
+        1\r\n  },\r\n  {\r\n    \"exchange_id\": \"XBTCE\",\r\n    \"website\": \"https://www.xbtce.com\",\r\n
+        \   \"name\": \"xBTCe\",\r\n    \"data_start\": \"2017-03-18\",\r\n    \"data_end\":
+        \"2018-06-26\",\r\n    \"data_quote_start\": \"2017-03-18T22:49:12.8140463Z\",\r\n
+        \   \"data_quote_end\": \"2018-06-26T22:46:33.1898623Z\",\r\n    \"data_orderbook_start\":
+        \"2017-03-18T22:49:12.8140463Z\",\r\n    \"data_orderbook_end\": \"2018-06-26T22:46:33.1898623Z\",\r\n
+        \   \"data_symbols_count\": 114\r\n  },\r\n  {\r\n    \"exchange_id\": \"CHBTC\",\r\n
+        \   \"website\": \"https://www.chbtc.com/\",\r\n    \"name\": \"CHBTC\",\r\n
+        \   \"data_start\": \"2018-05-16\",\r\n    \"data_end\": \"2018-06-24\",\r\n
+        \   \"data_quote_start\": \"2018-05-16T00:54:00.9928160Z\",\r\n    \"data_quote_end\":
+        \"2018-06-24T23:33:29.3034651Z\",\r\n    \"data_orderbook_start\": \"2018-05-16T00:54:00.9928160Z\",\r\n
+        \   \"data_orderbook_end\": \"2018-06-24T23:33:29.3034651Z\",\r\n    \"data_symbols_count\":
+        10\r\n  },\r\n  {\r\n    \"exchange_id\": \"COINEXCHANGE\",\r\n    \"website\":
+        \"https://www.coinexchange.io/\",\r\n    \"name\": \"CoinExchange\",\r\n    \"data_start\":
+        \"2018-01-24\",\r\n    \"data_end\": \"2018-06-26\",\r\n    \"data_quote_start\":
+        \"2018-01-24T00:21:57.1628343Z\",\r\n    \"data_quote_end\": \"2018-06-26T22:47:02.8700000Z\",\r\n
+        \   \"data_orderbook_start\": \"2018-01-24T00:21:57.1628343Z\",\r\n    \"data_orderbook_end\":
+        \"2018-06-26T22:47:02.8700000Z\",\r\n    \"data_symbols_count\": 820\r\n  },\r\n
+        \ {\r\n    \"exchange_id\": \"ANXPRO\",\r\n    \"website\": \"https://anxpro.com/\",\r\n
+        \   \"name\": \"ANXPro\",\r\n    \"data_start\": \"2018-01-24\",\r\n    \"data_end\":
+        \"2018-06-26\",\r\n    \"data_quote_start\": \"2018-01-24T00:42:31.5662178Z\",\r\n
+        \   \"data_quote_end\": \"2018-06-26T22:45:13.9911386Z\",\r\n    \"data_orderbook_start\":
+        \"2018-01-24T00:42:31.5662178Z\",\r\n    \"data_orderbook_end\": \"2018-06-26T22:45:13.9911386Z\",\r\n
+        \   \"data_symbols_count\": 13\r\n  },\r\n  {\r\n    \"exchange_id\": \"LYKKE\",\r\n
+        \   \"website\": \"https://www.lykke.com/\",\r\n    \"name\": \"Lykke\",\r\n
+        \   \"data_start\": \"2018-01-24\",\r\n    \"data_end\": \"2018-06-26\",\r\n
+        \   \"data_quote_start\": \"2018-01-24T00:21:30.1220000Z\",\r\n    \"data_quote_end\":
+        \"2018-06-26T22:46:17.7738822Z\",\r\n    \"data_orderbook_start\": \"2018-01-24T00:21:30.1220000Z\",\r\n
+        \   \"data_orderbook_end\": \"2018-06-26T22:46:17.7738822Z\",\r\n    \"data_symbols_count\":
+        227\r\n  }\r\n]"
+    http_version: 
+  recorded_at: Tue, 10 Jul 2018 19:17:19 GMT
+recorded_with: VCR 4.0.0
