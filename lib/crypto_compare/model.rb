@@ -1,4 +1,4 @@
-module CryptoCompare
+module CoinAPIClient
   module Model
     extend ActiveSupport::Concern
 

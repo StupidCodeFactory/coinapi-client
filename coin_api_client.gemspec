@@ -1,10 +1,10 @@
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "crypto_compare/version"
+require "coin_api_client/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "crypto_compare"
-  spec.version       = CryptoCompare::VERSION
+  spec.name          = "coin_api_client"
+  spec.version       = CoinAPIClient::VERSION
   spec.authors       = ["yann marquet"]
   spec.email         = ["ymarquet@gmail.com"]
 

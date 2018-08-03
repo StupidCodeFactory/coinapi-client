@@ -1,4 +1,4 @@
-module CryptoCompare
+module CoinAPIClient
   class Asset
     include Model
     include Model::MarketData

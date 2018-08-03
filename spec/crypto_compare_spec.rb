@@ -1,6 +1,6 @@
-RSpec.describe CryptoCompare do
+RSpec.describe CoinAPIClient do
   it "has a version number" do
-    expect(CryptoCompare::VERSION).not_to be nil
+    expect(CoinAPIClient::VERSION).not_to be nil
   end
 
   describe '.configure' do

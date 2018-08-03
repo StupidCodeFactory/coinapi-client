@@ -1,5 +1,5 @@
 require "bundler/setup"
-require "crypto_compare"
+require "coin_api_client"
 require 'byebug'
 require 'vcr'
 

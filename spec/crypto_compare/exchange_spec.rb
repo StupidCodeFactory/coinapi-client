@@ -1,7 +1,7 @@
 require "spec_helper"
-require 'crypto_compare/exchange'
+require 'coin_api_client/exchange'
 
-module CryptoCompare
+module CoinAPIClient
   RSpec.describe Exchange do
     describe '.all' do
       it "returns the list of available exanges" do

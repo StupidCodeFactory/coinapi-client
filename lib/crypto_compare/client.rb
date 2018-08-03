@@ -2,7 +2,7 @@ require 'faraday'
 require 'typhoeus'
 require 'typhoeus/adapters/faraday'
 
-module CryptoCompare
+module CoinAPIClient
   class Client
 
     APIError       = Class.new(StandardError)

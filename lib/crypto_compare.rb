@@ -1,13 +1,13 @@
-require "crypto_compare/version"
+require "coin_api_client/version"
 require 'active_model'
-require 'crypto_compare/model'
-require 'crypto_compare/exchange'
-require 'crypto_compare/asset'
-require 'crypto_compare/symbol'
-require 'crypto_compare/client'
+require 'coin_api_client/model'
+require 'coin_api_client/exchange'
+require 'coin_api_client/asset'
+require 'coin_api_client/symbol'
+require 'coin_api_client/client'
 
 
-module CryptoCompare
+module CoinAPIClient
 
   def self.api
     @api ||= begin
