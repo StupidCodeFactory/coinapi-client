@@ -14,5 +14,9 @@ module CoinAPIClient
     attribute :option_contract_unit, :float
     attribute :option_exercise_style, :string
     attribute :option_expiration_time, :time
+
+    attribute :index_id,                  :string
+    attribute :index_display_name,        :string
+    attribute :index_display_description, :string
   end
 end
